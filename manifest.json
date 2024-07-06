@@ -2,7 +2,7 @@
     "name": "undefin3dCompany",
     "version_number": "1.0.0",
     "website_url": "https://github.com/danield4n13l/undefin3dcompany",
-    "description": "",
+    "description": "A Lethal Company modpack for my team, that includes Vanilla-esque additions spiced with shits and giggles",
     "dependencies": [
         "BepInEx-BepInExPack-5.4.2100",
         "notnotnotswipez-MoreCompany-1.9.1",
