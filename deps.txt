@@ -18,12 +18,12 @@ Evaisa-FixPluginTypesSerialization-1.1.1
 MaxWasUnavailable-LethalModDataLib-1.2.2
 IAmBatby-LethalLevelLoader-1.2.4
 PopleZoo-BetterItemScan-3.0.2
-TestAccount666-ShipWindows-1.5.1
+TestAccount666-ShipWindows-1.5.2
 sfDesat-Celestial_Tint-1.5.2
 Zaggy1024-OpenBodyCams-2.2.1
 FlipMods-TooManyEmotes-2.1.19
 DiFFoZ-CompanyCruiserFix-1.0.3
-WiderStein-LertzMod-1.0.5
+WiderStein-LertzMod-1.0.6
 AinaVT-LethalConfig-1.4.2
 IAmBatby-DisplayHiddenRoutesAfterTraveling-1.2.2
 ViViKo-MoreMaterials-1.3.2
@@ -39,7 +39,7 @@ HeckinChloe-Quick_Radar_Switch-1.0.0
 EliteMasterEric-Coroner-1.6.2
 Dev1A3-LethalFixes-1.1.6
 femboytv-LethalPosters-1.2.3
-ZordAndCo-FunPosters-1.0.7
+ZordAndCo-FunPosters-1.0.8
 FlipMods-FasterItemDropship-1.2.1
 Pooble-LCFartLizards-1.2.1
 sunnobunno-YippeeMod-1.2.4
