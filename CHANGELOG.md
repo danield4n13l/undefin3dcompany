@@ -1,6 +1,16 @@
 # Changelog
 
-## 1.2.0 [LATEST]
+## 1.2.1 [LATEST]
+
+#### Removed
+
+- Josmodeus-CoilHeadStareUASound (deprecated)
+
+#### Added
+
+- Josmodeus-Coilheadstare_Cement (same mod, different name)
+
+## 1.2.0
 
 #### Removed
 
@@ -15,6 +25,7 @@
 #### Added
 
 - GeneralImprovements (literally almost all removed mods in this!)
+- Josmodeus-CoilHeadStareUASound
 
 #### Changes
 

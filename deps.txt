@@ -2,7 +2,7 @@ BepInEx-BepInExPack-5.4.2100
 notnotnotswipez-MoreCompany-1.9.4
 Suskitech-AlwaysHearActiveWalkies-1.4.5
 Evaisa-HookGenPatcher-0.0.5
-Evaisa-LethalLib-0.16.0
+Evaisa-LethalLib-0.16.1
 x753-More_Suits-1.4.3
 Verity-TooManySuits-1.1.0
 Rune580-LethalCompany_InputUtils-0.7.7
@@ -20,8 +20,8 @@ TestAccount666-ShipWindows-1.5.2
 sfDesat-Celestial_Tint-1.5.2
 Zaggy1024-OpenBodyCams-2.2.1
 FlipMods-TooManyEmotes-2.1.19
-DiFFoZ-CompanyCruiserFix-1.0.3
-WiderStein-LertzMod-1.0.6
+DiFFoZ-CompanyCruiserFix-1.0.4
+WiderStein-LertzMod-1.0.7
 AinaVT-LethalConfig-1.4.2
 ViViKo-MoreMaterials-1.3.2
 PowerFull-PowerSuitsPack-1.2.0
@@ -49,11 +49,11 @@ qwbarch-Mirage-1.8.0
 Danos-LethalStats-0.9.5
 BMX-LobbyCompatibility-1.1.0
 ManiaBania-1000_Quota_Stare-1.0.0
-DiggC-CruiserImproved-1.0.3
+DiggC-CruiserImproved-1.1.0
 Kittenji-Groan_Tube_Scrap-1.0.2
 ShaosilGaming-GeneralImprovements-1.3.0
 Saradora-UnityMDK-1.3.0
 Saradora-LethalMDK-1.2.0
 Saradora-ScanTweaks-1.6.1
-Josmodeus-CoilHeadStareUASound-1.0.0
 Owen3H-IntroTweaks-1.5.0
+Josmodeus-Coilheadstare_Cement-1.0.0
