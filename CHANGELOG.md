@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.2.1 [LATEST]
+## 1.2.2 [LATEST]
+
+#### Changes
+
+- updated mods (Coroner got an update yippee)
+
+## 1.2.1
 
 #### Removed
 
