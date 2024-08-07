@@ -62,18 +62,34 @@ param (
     $Deps
 )
 
+# If IDs change:
+$groupID = "undefin3d"
+$packID = "undefin3dCompany"
+
+# Read the manifest
 $mf = ConvertFrom-Json (Get-Content -Raw -Path $ManifestPath)
 
-if ("" -ne $Deps) {
+# Set the filter
+$depID = "$groupID-$packID-[0-9]\.[0-9]\.[0-9]$"
+
+# If deps are present:
+if ($null -ne $Deps -and "" -ne $Deps) {
     $inDeps = Get-Content -Path $Deps
+    if (($inDeps -match $depID).Length -gt 0)
+    {
+        $inDeps = ($inDeps -replace ($depID),"") -notmatch "^\s*$"
+        Write-Host "Found own dependency string, skipping"
+    }
     $mf.dependencies = $inDeps
     Write-Host "Got dependencies from '$Deps'"
 }
 
-if ("" -ne $Version) {
+# If version is present:
+if ($null -ne $Version -and "" -ne $Version) {
     $mf.version_number = $Version
     Write-Host "Set new version to: $Version"
 }
 
+# Finally: save
 ConvertTo-Json $mf | Set-Content $ManifestPath
 Write-Host "Successfully applied changes to '$ManifestPath'!"
