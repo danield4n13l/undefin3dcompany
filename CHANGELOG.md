@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.2.2 [LATEST]
+## 1.2.3 [LATEST]
+
+#### Changes
+
+- updated mods (long time no see)
+
+## 1.2.2
 
 #### Changes
 
