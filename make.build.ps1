@@ -14,14 +14,26 @@
     A zip archive in the 'releases' folder, named according to name and version.
 #>
 
+# Dot-source the common parameters
+
+. .\_common.ps1
+
 #   Check if we have all the things the modpack needs
+
+##  First: the 5 crucial files
 $cdr = (Get-ChildItem .).Name
 $c = $false
 "manifest.json", "icon.png", "README.md", "CHANGELOG.md", "config" | ForEach-Object { $c = $c -or ($cdr -cnotcontains $_) }
 if ($c) { throw "Not all requirements found in current working directory." }
 
-#   Zip that mf up in the releases folder
+##  Second: get info from manifest.json
 $info = Get-Content -Raw -Path .\manifest.json | ConvertFrom-Json
+
+##  Third: Check if the depstrings have recursion or syntax problems
+
+if ($info.dependencies -match "$depID") {throw "Dependencies inside manifest.json contain the package itself. Aborting."}
+
+#   Zip that mf up in the releases folder
 $newname = "$($info.name)_v$($info.version_number).zip"
 
 #   Compress

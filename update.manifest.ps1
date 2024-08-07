@@ -14,7 +14,7 @@
     .OUTPUTS
     None.
     .EXAMPLE
-    .\update_manifest.ps1 -ManifestPath manifest.json -Version "1.2.3" -Deps .\deps.txt
+    .\update.manifest.ps1 -ManifestPath manifest.json -Version "1.2.3" -Deps .\deps.txt
     Got dependecies from '.\deps.txt'
     Set new version to: 1.2.3
     Successfully applied changes to '.\manifest.json'!
@@ -25,7 +25,7 @@ param (
         Position = 0,
         ValueFromPipeline = $true,
         ValueFromPipelineByPropertyName = $true,
-        HelpMessage = "Path to manifest.json.")]
+        HelpMessage = "Path to manifest.json")]
     [Alias("PSPath")]
     [ValidateNotNullOrEmpty()]
     [ValidateScript(
@@ -42,7 +42,7 @@ param (
                    ($null -ne $temp.description) -and
                    ($null -ne $temp.dependencies)
         },
-        ErrorMessage = "Not a valid r2modman manifest.json."
+        ErrorMessage = "Not a valid r2modman manifest.json"
     )]
     [string]
     $ManifestPath,
@@ -56,30 +56,42 @@ param (
     [Parameter(Mandatory = $false,
         ValueFromPipeline = $false,
         ValueFromPipelineByPropertyName = $false,
-        HelpMessage = "Path to the plaintext dependency string file.")]
+        HelpMessage = "Path to the plaintext dependency string file")]
     [ValidateNotNullOrEmpty()]
     [string[]]
     $Deps
 )
 
-# If IDs change:
-$groupID = "undefin3d"
-$packID = "undefin3dCompany"
+# If IDs change, go to _common.ps1
+. .\_common.ps1
 
 # Read the manifest
 $mf = ConvertFrom-Json (Get-Content -Raw -Path $ManifestPath)
 
-# Set the filter
-$depID = "$groupID-$packID-[0-9]\.[0-9]\.[0-9]$"
-
 # If deps are present:
 if ($null -ne $Deps -and "" -ne $Deps) {
     $inDeps = Get-Content -Path $Deps
+
+    # Check if our own plugin depString is inside
     if (($inDeps -match $depID).Length -gt 0)
     {
         $inDeps = ($inDeps -replace ($depID),"") -notmatch "^\s*$"
         Write-Host "Found own dependency string, skipping"
     }
+
+    # Check if every string is a valid depString
+    $depMatch = "(\w+)\-(\w+)\-(\d+\.\d+\.\d+)$"
+    if ($err = $inDeps -notmatch $depMatch)
+    {
+        throw @"
+One or more dependency strings are not valid.
+List of invalid strings:
+$($err -join "`n")
+"@ 
+    }
+
+    # Finally write to the object
+
     $mf.dependencies = $inDeps
     Write-Host "Got dependencies from '$Deps'"
 }

@@ -1,6 +1,13 @@
 # Changelog
 
-## 1.2.3 [LATEST]
+## 1.2.4
+
+#### Changes
+
+- updated inner workins (settings, scripts)
+- refactored code
+
+## 1.2.3
 
 #### Changes
 
