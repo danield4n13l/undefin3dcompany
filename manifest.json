@@ -1,6 +1,6 @@
 {
   "name": "undefin3dCompany",
-  "version_number": "1.2.4",
+  "version_number": "1.2.5",
   "website_url": "https://github.com/danield4n13l/undefin3dcompany",
   "description": "A Lethal Company modpack for my team, that includes Vanilla-esque additions spiced with shits and giggles",
   "dependencies": [
@@ -24,7 +24,7 @@
     "IAmBatby-LethalLevelLoader-1.3.8",
     "TestAccount666-ShipWindows-1.8.0",
     "sfDesat-Celestial_Tint-1.5.2",
-    "Zaggy1024-OpenBodyCams-2.2.2",
+    "Zaggy1024-OpenBodyCams-2.2.3",
     "FlipMods-TooManyEmotes-2.1.26",
     "DiFFoZ-CompanyCruiserFix-1.0.5",
     "WiderStein-LertzMod-1.1.5",
@@ -65,7 +65,7 @@
     "Josmodeus-Coilheadstare_Cement-1.0.0",
     "Lordfirespeed-OdinSerializer-2022.11.9",
     "xilophor-StaticNetcodeLib-1.1.1",
-    "AudioKnight-StarlancerAIFix-3.6.0",
+    "AudioKnight-StarlancerAIFix-3.8.0",
     "sfDesat-ViewExtension-1.3.0"
   ]
 }

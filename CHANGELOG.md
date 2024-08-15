@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.5
+
+#### Changes
+
+- updated mods
+
 ## 1.2.4
 
 #### Changes
