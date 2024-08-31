@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.3.0
+
+#### Removed
+
+- GokuBarber (nonfunctional)
+- LCFartLizards (deprecated)
+- HornMoan (too many logs)
+- CoilHeadstare_Cement (nonfunctional)
+
+#### Added
+
+- BetterSprayPaint
+
+#### Changes
+
+- updated mods to support v62+
+- **changed configs**, so use code provided by me, or delete & download!
+  - Emotes: now all unlocks are saved per savefile, instead of per run (does not reset on firing)
+  - GI: TPd bodies will auto-collect (still buggy if a Barber-snipped corpse is collected...)
+  - BetterSprayPaint: everything is default; infinite spray, short shake, variable size
+  - ShipWindows: all audio are disabled
+  - OBC: render distance is now 35 (instead of 25) for outdoor longshots
+
 ## 1.2.5
 
 #### Changes
