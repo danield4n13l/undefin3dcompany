@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1
+
+#### Changes
+
+- edited readme :D
+
 ## 1.3.0
 
 #### Removed
