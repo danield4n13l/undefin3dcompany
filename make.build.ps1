@@ -22,6 +22,7 @@
 
 ##  First: the 5 crucial files
 $cdr = (Get-ChildItem .).Name
+Write-Host "Current directory is: $((Get-Item .).FullName)"
 $c = $false
 "manifest.json", "icon.png", "README.md", "CHANGELOG.md", "config" | ForEach-Object { $c = $c -or ($cdr -cnotcontains $_) }
 if ($c) { throw "Not all requirements found in current working directory." }

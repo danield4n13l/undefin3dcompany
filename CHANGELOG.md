@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.4.0
+
+#### Removed
+
+- PowerSuitsPack (deleted)
+- 100QuotaStareSuit (merged into undefin3dSuits)
+
+#### Added
+
+- undefin3dSuits (fork of PowerSuitsPack)
+
+#### Changes
+
+- updated mods to v64+
+- **configs changed** due to v64
+  - TooManySuits: default buttons are PageUp/PageDown
+
 ## 1.3.1
 
 #### Changes
