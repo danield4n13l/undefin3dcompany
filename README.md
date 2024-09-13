@@ -1,6 +1,6 @@
 # UndefiN3D Company
 
-A modpack filled with vanilla mods, fulfilling the needs of my team (and most importantly, the company). v62 COMPATIBLE!
+A modpack filled with vanilla mods, fulfilling the needs of my team (and most importantly, the company). v64 COMPATIBLE!
 
 Feel free to modify anything, although the pack contains our configs, tuned to perfection (no huge game-changing features, only small helping ones)
 
