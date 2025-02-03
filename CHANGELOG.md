@@ -1,5 +1,32 @@
 # Changelog
 
+## 2.0.0
+
+#### Removed
+
+- LethalSnap
+- deprecated mods
+
+#### Added
+
+- LethalCasino (yaay)
+- ImmortalSnail with SoThisIsImmortal
+- LethalThings back in the game siuuu
+- ImmersiveScrap
+- AntiSlimeCamp
+- LCBetterClock
+- BetterEXP
+- NiceChat
+- Poltergeist (haunting as dead is so cool)
+- DiscJockey (literally the best music mod)
+- NameFix (no more censored names)
+- PoolRooms
+- Start_with_Fatality_Board
+
+#### Changes
+
+Too many to count, pls use code or make a new profile because configs have been wiped and remade (no more orphaned configs lying around)
+
 ## 1.4.0
 
 #### Removed
