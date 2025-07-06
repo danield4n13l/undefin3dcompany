@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.0.0
+
+- long-awaited v70 return!
+- removed deprecated mods (and some bullshits)
+- reconfigured some mods
+
+#### Removed
+
+- ImmortalSnail with SoThisIsImmortal
+- PoolRooms
+- LethalThings & Start_with_Fatality_Board
+- other mods...
+
+#### Added
+
+- MoreAds
+- Universal_Radar (currently not displaying scrap?)
+
 ## 2.0.0
 
 #### Removed
